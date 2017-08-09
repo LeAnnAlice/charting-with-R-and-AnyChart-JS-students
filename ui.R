@@ -9,7 +9,7 @@ db = dbConnect(MySQL(),
   user = "anychart_user", 
   password = "anychart_pass")
 
-loadData = dbGetQuery(db, "SELECT name, value FROM students")
+loadData = dbGetQuery(db, "SELECT year, value FROM students ORDER BY year")
 
 data1 <- character()
 
