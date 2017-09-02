@@ -14,7 +14,7 @@ BEGIN
   END IF;
   CREATE TABLE IF NOT EXISTS students (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(64),
+    year INT,
     value INT
   );
   SET data_present = (SELECT COUNT(*) FROM students);
